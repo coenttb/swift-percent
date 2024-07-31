@@ -165,7 +165,7 @@ extension Percentage: Comparable {
 
 extension Percentage: CustomStringConvertible {
 	// Note: It's a `var` for testing.
-	internal static var formatter: NumberFormatter = {
+	internal static let formatter: NumberFormatter = {
 		let formatter = NumberFormatter()
 		formatter.numberStyle = .percent
 		return formatter
