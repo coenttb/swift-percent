@@ -22,6 +22,10 @@ let package = Package(
         .target(
             name: .percent,
             dependencies: []
+        ),
+        .testTarget(
+            name: "PercentTests",
+            dependencies: [.percent]
         )
     ]
 )
