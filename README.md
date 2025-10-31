@@ -177,9 +177,11 @@ let doubleResult = 50%.of(doubleValue)  // 100.0 (Double)
 
 ## Related Packages
 
-- [swift-html](https://github.com/coenttb/swift-html) - A Swift DSL for type-safe HTML & CSS, integrating swift-css and pointfree-html
-- [swift-css-types](https://github.com/coenttb/swift-css-types) - A complete Swift domain model of CSS properties and types
-- [swift-html-types](https://github.com/coenttb/swift-html-types) - A complete Swift domain model of HTML elements and attributes
+### Used By
+
+- [swift-bunq](https://github.com/coenttb/swift-bunq): A Swift package for the Bunq banking API.
+- [swift-document-templates](https://github.com/coenttb/swift-document-templates): A Swift package for data-driven business document creation.
+- [swift-money](https://github.com/coenttb/swift-money): A Swift package with foundational types for currency and monetary calculations.
 
 ## License
 
