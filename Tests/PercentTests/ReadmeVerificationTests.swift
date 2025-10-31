@@ -1,4 +1,6 @@
+#if canImport(CoreGraphics)
 import CoreGraphics
+#endif
 import Testing
 
 @testable import Percent
@@ -173,6 +175,7 @@ struct ReadmeVerificationTests {
     #expect(random <= 20%)
   }
 
+  #if canImport(CoreGraphics)
   @Test("Working with Different Numeric Types - CGFloat from README line 162-164")
   func workingWithCGFloat() throws {
     // CGFloat
@@ -181,6 +184,7 @@ struct ReadmeVerificationTests {
 
     #expect(p1.rawValue == 50.5)
   }
+  #endif
 
   @Test("Working with Different Numeric Types - Int from README line 166-168")
   func workingWithInt() throws {
