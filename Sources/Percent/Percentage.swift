@@ -42,7 +42,7 @@ import Foundation
 public struct Percentage: Hashable, Codable {
   /**
   The raw percentage number.
-  
+
   ```
   10%.rawValue
   //=> 10
@@ -52,7 +52,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Get the percentage as a fraction.
-  
+
   ```
   50%.fraction
   //=> 0.5
@@ -62,7 +62,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Create a `Percentage` from a `BinaryFloatingPoint`, for example, `Double` or `CGFloat`.
-  
+
   ```
   let cgFloat: CGFloat = 50.5
   Percentage(cgFloat)
@@ -75,7 +75,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Create a `Percentage` from a `BinaryInteger`, for example, `Int`.
-  
+
   ```
   let int = 50
   Percentage(int)
@@ -88,7 +88,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Create a `Percentage` from a fraction.
-  
+
   ```
   Percentage(fraction: 0.5)
   //=> "50%"
@@ -100,7 +100,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Returns how much the percentage of the given integer value is.
-  
+
   ```
   50%.of(200)
   //=> 100
@@ -112,7 +112,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Returns how much the percentage of the given integer value is exactly, represented as floating-point.
-  
+
   ```
   50%.of(201) as Double
   //=> 100.5
@@ -126,7 +126,7 @@ public struct Percentage: Hashable, Codable {
 
   /**
   Returns how much the percentage of the given floating-point value is.
-  
+
   ```
   50%.of(250.5)
   //=> 125.25
@@ -140,7 +140,7 @@ public struct Percentage: Hashable, Codable {
 extension Percentage {
   /**
   Returns a random value within the given range.
-  
+
   ```
   Percent.random(in: 10%...20%)
   //=> Can be 10%, 11%, 12%, 19.98%, etc.
